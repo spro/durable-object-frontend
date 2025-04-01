@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+html {
+    @apply antialiased;
+}
+
+body {
+    @apply m-0 flex items-center justify-center min-w-[320px] min-h-screen;
+}
+
+a {
+    @apply font-medium text-blue-400 no-underline hover:text-blue-500;
+}
+
+button:focus-visible {
+    @apply outline-none ring-2 ring-blue-500;
+}
