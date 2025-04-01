@@ -1,14 +1,8 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
 import useWebSocket, { ReadyState } from "react-use-websocket"
 
-import reactLogo from "./assets/react.svg"
-import viteLogo from "/vite.svg"
-import "./App.css"
-
 function App() {
-    const [count, setCount] = useState(0)
-
     const { sendJsonMessage, lastJsonMessage, readyState } = useWebSocket(
         "ws://localhost:8787/ws",
     )
