@@ -4,7 +4,7 @@ import useWebSocket, { ReadyState } from "react-use-websocket"
 
 function App() {
     const { sendJsonMessage, lastJsonMessage, readyState } = useWebSocket(
-        "ws://localhost:8787/ws",
+        `${import.meta.env.VITE_WORKER_URL}/ws`,
     )
 
     // Run when the connection state (readyState) changes
